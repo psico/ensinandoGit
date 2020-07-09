@@ -1,0 +1,4 @@
+SELECT tb_paciente.txt_nome, tb_telefone.txt_telefone
+FROM sis_hospitais.tb_paciente 
+FULL JOIN sis_hospitais.tb_telefone ON (tb_paciente.id_paciente = tb_telefone.id_paciente)
+where txt_telefone is null
