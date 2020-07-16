@@ -1,0 +1,5 @@
+SELECT  * FROM sis_hospitais.tb_atendimento
+inner join sis_hospitais.tb_medico ON tb_medico.id_medico = tb_atendimento.id_medico
+inner join sis_hospitais.tb_paciente ON tb_paciente.id_paciente = tb_atendimento.id_paciente
+inner join sis_hospitais.tb_plano_de_saude ON tb_plano_de_saude.id_paciente = tb_paciente.id_paciente
+inner join sis_hospitais.tb_empresa_plano_saude ON tb_empresa_plano_saude.id_empresa_plano_saude = tb_plano_de_saude.id_empresa_plano_saude
