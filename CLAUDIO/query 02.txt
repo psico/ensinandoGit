@@ -1,0 +1,11 @@
+alter table sis_hospitais.tb_paciente
+add column deletado bool default false not null;
+
+alter table sis_hospitais. tb_medico
+add column deletado bool default false not null;
+
+alter table sis_hospitais.tb_atendimento
+add column deletado bool default false not null;
+
+
+
