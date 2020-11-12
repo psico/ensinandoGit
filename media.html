@@ -1,0 +1,18 @@
+<script>
+function media()
+{
+	let i=prompt ("voce quer saber a media da idade de quantas pessoas?");
+	let aux=0;
+	let num1=0;
+	let num2=0;
+
+	for (aux=0; aux<i; aux++)
+	{
+		num2= prompt ("digite a idade da pessoa numero "+(aux+1));
+		num1=parseInt(num1)+parseInt(num2);
+	}
+	num1=(num1)/i;
+	alert("A media da idade das pessoas citadas e: "+(num1));
+}
+media();
+</script>
