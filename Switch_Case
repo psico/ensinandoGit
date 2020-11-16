@@ -1,0 +1,30 @@
+<script>
+function ps()
+{
+	let play= prompt("Qual, playstation você deseja comprar? (digite somente o numero do console)");
+
+	switch(play) {
+		case "1":
+			alert("Parabens você comprou o playstation 1");
+			break;
+		case "2":
+			alert("Parabens você comprou o playstation 2");
+			break;
+		case "3":
+			alert("Parabens você comprou o playstation 3");
+			break;
+		case "4":
+			alert("Parabens você comprou o playstation 4");
+			break;
+		case "5": 
+			alert("Parabens você comprou o playstation 5");
+			break;
+		default:
+			alert("Indisponível, escolha um entre o 1 e o 5");
+			ps();
+	}
+}
+ps();
+
+
+</script>
