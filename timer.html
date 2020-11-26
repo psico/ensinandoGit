@@ -1,0 +1,20 @@
+<script>
+function bomb()
+{
+	
+	let i=10;
+	let	boom=setInterval(function(){
+				if(i>0)
+				{
+				document.write(i+"<br>"); 
+				}
+				else
+				{
+					alert("Booooooooom!");
+					clearInterval(boom);
+				}
+				i--;
+			}, 1000);
+}
+bomb();
+ </script>
